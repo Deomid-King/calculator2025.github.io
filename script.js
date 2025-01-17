@@ -3,9 +3,9 @@ function calculate() {
 	var weight = document.getElementById("weight").value;
 	var result = document.getElementById("result").value;
 
-	// рассчитываем результат
+	// СЂР°СЃСЃС‡РёС‚С‹РІР°РµРј СЂРµР·СѓР»СЊС‚Р°С‚
 	var output = (+price + +result +(weight == "5t" ? 0: weight == "15t" ? 799 : weight == "5kg" ? 1299 : weight == "15kg" ? 1699 : weight == "50kg" ? 3599 : 6499)) / 0.84;
 
-	// выводим результат на страницу
-	document.getElementById("output").innerHTML = "Итоговая цена для Каспи: " + Math.round(output);
+	// РІС‹РІРѕРґРёРј СЂРµР·СѓР»СЊС‚Р°С‚ РЅР° СЃС‚СЂР°РЅРёС†Сѓ
+	document.getElementById("output").innerHTML = "РС‚РѕРіРѕРІР°СЏ С†РµРЅР° РґР»СЏ РљР°СЃРїРё: " + Math.round(output);
 }
