@@ -3,9 +3,9 @@ function calculate() {
 	var weight = document.getElementById("weight").value;
 	var result = document.getElementById("result").value;
 
-	// рассчитываем результат
+	// СЂР°СЃСЃС‡РёС‚С‹РІР°РµРј СЂРµР·СѓР»СЊС‚Р°С‚
 	var output = +price * 0.84 - +result - (weight == "5t" ? 0: weight == "15t" ? 799 : weight == "5kg" ? 1299 : weight == "15kg" ? 1699 : weight == "50kg" ? 3599 : 5499);
 
-	// выводим результат на страницу
-	document.getElementById("output").innerHTML = "Маржа: " + Math.round(output);
+	// РІС‹РІРѕРґРёРј СЂРµР·СѓР»СЊС‚Р°С‚ РЅР° СЃС‚СЂР°РЅРёС†Сѓ
+	document.getElementById("output").innerHTML = "РњР°СЂР¶Р°: " + Math.round(output);
 }
