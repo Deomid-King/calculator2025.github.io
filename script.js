@@ -4,7 +4,7 @@ function calculate() {
 	var result = document.getElementById("result").value;
 
 	// рассчитываем результат
-	var output = (+price + +result +(weight == "5t" ? 0: weight == "15t" ? 799 : weight == "5kg" ? 1299 : weight == "15kg" ? 1699 : weight == "50kg" ? 3599 : 6499)) / 0.84;
+	var output = (+price + +result +(weight == "5t" ? 100: weight == "15t" ? 899 : weight == "5kg" ? 1799 : weight == "15kg" ? 2199 : weight == "50kg" ? 4099 : 6999)) / 0.84;
 
 	// выводим результат на страницу
 	document.getElementById("output").innerHTML = "Итоговая цена для Каспи: " + Math.round(output);
