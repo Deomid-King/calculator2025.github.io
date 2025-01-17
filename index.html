@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Калькулятор стоимости товара Каспи</title>
+	<title>РљР°Р»СЊРєСѓР»СЏС‚РѕСЂ СЃС‚РѕРёРјРѕСЃС‚Рё С‚РѕРІР°СЂР° РљР°СЃРїРё</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<div class="container">
-		<h4><a href = "#" style="background-color: #555555">Посчитать стоимость для Каспи</a><br><br><a href="second.html">Посчитать маржу со стоимости</a></h4>
+		<h4><a href = "#" style="background-color: #555555">РџРѕСЃС‡РёС‚Р°С‚СЊ СЃС‚РѕРёРјРѕСЃС‚СЊ РґР»СЏ РљР°СЃРїРё</a><br><br><a href="second.html">РџРѕСЃС‡РёС‚Р°С‚СЊ РјР°СЂР¶Сѓ СЃРѕ СЃС‚РѕРёРјРѕСЃС‚Рё</a></h4>
 		<form>
 			<div class="form-group">
-				<label for="price">Цена закупа:</label>
+				<label for="price">Р¦РµРЅР° Р·Р°РєСѓРїР°:</label>
 				<input type="number" id="price" name="price">
 			</div>
 			<div class="form-group">
-				<label for="weight">Выберите вариант:</label>
+				<label for="weight">Р’С‹Р±РµСЂРёС‚Рµ РІР°СЂРёР°РЅС‚:</label>
 				<select id="weight" name="weight">
-					<option value="5t">до 5 тыс. тг</option>
-					<option value="15t">до 15 тыс. тг</option>
-					<option value="5kg">до 5 кг</option>
-					<option value="15kg">до 15 кг</option>
-					<option value="50kg">до 50 кг</option>
-					<option value="50001">>50 кг</option>
+					<option value="5t">РґРѕ 5 С‚С‹СЃ. С‚Рі</option>
+					<option value="15t">РґРѕ 15 С‚С‹СЃ. С‚Рі</option>
+					<option value="5kg">РґРѕ 5 РєРі</option>
+					<option value="15kg">РґРѕ 15 РєРі</option>
+					<option value="50kg">РґРѕ 50 РєРі</option>
+					<option value="50001">>50 РєРі</option>
 				</select>
 			</div>
 			<div class="form-group">
-				<label for="result">Желаемая маржа:</label>
+				<label for="result">Р–РµР»Р°РµРјР°СЏ РјР°СЂР¶Р°:</label>
 				<input type="number" id="result" name="result">
 			</div>
-			<button type="button" onclick="calculate()">Рассчитать</button>
+			<button type="button" onclick="calculate()">Р Р°СЃСЃС‡РёС‚Р°С‚СЊ</button>
 		</form>
 		<div id="output"></div>
 	</div>
