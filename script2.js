@@ -8,7 +8,7 @@ function calculate() {
 	var output = +price * 0.83 - +result - (weight == "5t" ? 100: weight == "15t" ? 995 : weight == "5kg" ? 1955 : weight == "15kg" ? 2403 : weight == "50kg" ? 4531 : 7779);
 
 	// расчет процентов
-	var procent = (+result / +price) * 100;
+	var procent = (+output / +result) * 100;
 
 	// выводим результат на страницу
 	document.getElementById("procent").innerHTML = Math.round(procent) + "%";
